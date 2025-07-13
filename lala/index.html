@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LALA AgRO SCIENCES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LALA AGRO SCIENCES</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,7 +14,7 @@
     }
 
     body {
-      background: #fff;
+      background: #ffffff;
       color: #333;
       line-height: 1.6;
     }
@@ -33,13 +33,11 @@
     }
 
     .logo {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 700;
       display: flex;
       align-items: center;
       gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: space-between;
     }
 
     .logo img {
@@ -49,10 +47,9 @@
     .navbar ul {
       display: flex;
       list-style: none;
-      flex-wrap: wrap;
       justify-content: flex-end;
-      gap: 1rem;
-      padding-top: 1rem;
+      gap: 2rem;
+      margin-top: 1rem;
     }
 
     .navbar a {
@@ -63,52 +60,53 @@
 
     .hero {
       background: url('/WhatsApp%20Image%202025-07-12%20at%2010.52.01%20PM%20(1).jpeg') center/cover no-repeat;
-      height: 60vh;
+      height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
-      color: #fff;
-      background-color: rgba(45, 106, 79, 0.85);
+      font-size: 3rem;
+      background-color: rgba(45, 106, 79, 0.8);
       padding: 1rem 2rem;
       border-radius: 10px;
     }
 
     section h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
       color: #2d6a4f;
       text-align: center;
-      margin-bottom: 1rem;
     }
 
     .boxed-section {
       background: #f9f9f9;
+      border: 1px solid #ddd;
       border-left: 5px solid #2d6a4f;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 10px;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 3rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
-    .service-items,
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
+    .service-items, .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
     }
 
     .service-box, .gallery-item {
+      width: 280px;
       text-align: center;
     }
 
-    .service-box img,
-    .gallery-img {
+    .service-box img, .gallery-img {
       width: 100%;
       height: 200px;
       object-fit: cover;
@@ -143,36 +141,15 @@
       text-align: center;
       margin-top: 2rem;
     }
-
-    @media screen and (max-width: 768px) {
-      .hero {
-        height: 40vh;
-      }
-
-      .hero h1 {
-        font-size: 1.8rem;
-        padding: 0.8rem 1rem;
-      }
-
-      .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
-
-      .logo {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img src="/logo.png.jpeg" alt="Lala Agro Logo" />
-        <span>LALA AgRO SCIENCES</span>
+        <img src="/logo.png.jpeg" alt="Lala Agro Logo">
+       LALA AGRO SCIENCES
       </div>
       <nav class="navbar">
         <ul>
@@ -186,10 +163,14 @@
     </div>
   </header>
 
-<!--   <section class="hero">
-    <h1>Lala Agro Sciences</h1>
-  </section>
- -->
+<!--   <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Lala Agro Sciences</h1>
+    </div>
+  </section> -->
+
+  <!-- About -->
   <section id="about">
     <div class="container">
       <h2>Who We Are</h2>
@@ -199,6 +180,7 @@
     </div>
   </section>
 
+  <!-- Products -->
   <section id="products">
     <div class="container">
       <h2>Our Key Products</h2>
@@ -233,20 +215,30 @@
     </div>
   </section>
 
+  <!-- Gallery -->
   <section id="gallery">
     <div class="container">
       <h2>Manufacturing & Machinery</h2>
       <div class="boxed-section">
         <div class="gallery-grid">
-          <div class="gallery-item"><img src="/WhatsApp Image 2025-07-12 at 10.52.01 PM (1).jpeg" class="gallery-img" alt="Factory 1" /></div>
-          <div class="gallery-item"><img src="/WhatsApp Image 2025-07-12 at 10.52.01 PM.jpeg" class="gallery-img" alt="Factory 2" /></div>
-          <div class="gallery-item"><img src="/WhatsApp Image 2025-07-12 at 10.52.02 PM (1).jpeg" class="gallery-img" alt="Machine 1" /></div>
-          <div class="gallery-item"><img src="/WhatsApp Image 2025-07-12 at 10.52.02 PM.jpeg" class="gallery-img" alt="Machine 2" /></div>
+          <div class="gallery-item">
+            <img src="/WhatsApp Image 2025-07-12 at 10.52.01 PM (1).jpeg" class="gallery-img" alt="Factory 1">
+          </div>
+          <div class="gallery-item">
+            <img src="/WhatsApp Image 2025-07-12 at 10.52.01 PM.jpeg" class="gallery-img" alt="Factory 2">
+          </div>
+          <div class="gallery-item">
+            <img src="/WhatsApp Image 2025-07-12 at 10.52.02 PM (1).jpeg" class="gallery-img" alt="Machine 1">
+          </div>
+          <div class="gallery-item">
+            <img src="/WhatsApp Image 2025-07-12 at 10.52.02 PM.jpeg" class="gallery-img" alt="Machine 2">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <div class="container">
       <h2>Get in Touch</h2>
@@ -261,6 +253,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Lala Agro Sciences. All rights reserved.</p>
